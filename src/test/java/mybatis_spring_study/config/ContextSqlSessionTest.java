@@ -7,14 +7,21 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {"classpath:/context-root.xml"})
 public class ContextSqlSessionTest {
 
 	protected static final Log log= LogFactory.getLog(ContextSqlSessionTest.class);
 	
 	@After
 	public void tearDown() throws Exception {
+		// 메소드 시작후에 한줄 띄워라 ~ 용도
 		System.out.println();
 	}
 	
