@@ -1,0 +1,4 @@
+SELECT  USER FROM dual;
+
+SELECT * FROM employee;
+SELECT * FROM department;
