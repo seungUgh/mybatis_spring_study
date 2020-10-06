@@ -2,4 +2,8 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 
 <configuration>
+	<typeAliases>
+		<package name="mybatis_spring_study.dto"/>
+		<!-- <typeAlias type=""/> 를쓰면 dto 갯수 만큼 추가해줘야한다..그래서 <package  사용> -->
+	</typeAliases>
 </configuration>
